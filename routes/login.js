@@ -1,8 +1,8 @@
 const express = require("express");
 const router = express.Router();
-const rootDir = require("../helper/path");
+const rootDir = require("../utils/path");
 const path = require("path");
-const adminController = require("../controllers/admin");
+const adminController = require("../controllers/user");
 
 router.get("/", (req, res) => {
     res.sendFile(path.join(rootDir, "views", "login.html"));
